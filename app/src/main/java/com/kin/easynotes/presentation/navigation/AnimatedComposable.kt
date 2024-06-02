@@ -1,5 +1,4 @@
-package com.kin.easynotes.navigation
-
+package com.kin.easynotes.presentation.navigation
 
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.core.tween

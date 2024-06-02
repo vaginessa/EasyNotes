@@ -1,4 +1,4 @@
-package com.kin.easynotes.presentation.theme
+package presentation.theme
 
 import android.app.Activity
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import com.kin.easynotes.presentation.screens.settings.model.SettingsViewModel
+
 
 private fun getColorScheme(context: Context, isDarkTheme: Boolean, isDynamicTheme: Boolean, isAmoledTheme: Boolean): ColorScheme {
     val colorScheme = if (isDynamicTheme && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
@@ -24,18 +24,18 @@ private fun getColorScheme(context: Context, isDarkTheme: Boolean, isDynamicThem
 }
 
 @Composable
-fun LeafNotesTheme(
-    settingsModel: SettingsViewModel,
+fun EasyNotesTheme(
+    //settingsModel: SettingsViewModel,
     content: @Composable () -> Unit
 ) {
     val context = LocalContext.current
     val activity = LocalView.current.context as Activity
-    WindowCompat.getInsetsController(activity.window, activity.window.decorView).apply {
-        isAppearanceLightStatusBars = !(settingsModel.darkTheme || settingsModel.amoledTheme)
-    }
+//    WindowCompat.getInsetsController(activity.window, activity.window.decorView).apply {
+//        isAppearanceLightStatusBars = !(settingsModel.darkTheme || settingsModel.amoledTheme)
+//    }
 
     MaterialTheme(
-        colorScheme = getColorScheme(context, settingsModel.darkTheme, settingsModel.dynamicTheme, settingsModel.amoledTheme),
+        colorScheme = getColorScheme(context, true, true, true),
         typography = Typography(),
         content = content
     )

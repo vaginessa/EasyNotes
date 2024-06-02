@@ -1,4 +1,4 @@
-package com.kin.easynotes.presentation.theme
+package presentation.theme
 
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme

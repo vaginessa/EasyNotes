@@ -1,4 +1,4 @@
-package com.kin.easynotes.presentation.components
+package com.kin.easynotes.presentation.common
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth

@@ -1,4 +1,4 @@
-package com.kin.easynotes.data.dao
+package com.kin.easynotes.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,7 +7,6 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.kin.easynotes.domain.model.Note
-
 import kotlinx.coroutines.flow.Flow
 
 @Dao

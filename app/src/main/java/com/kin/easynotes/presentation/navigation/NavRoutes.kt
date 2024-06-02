@@ -1,4 +1,5 @@
-package com.kin.easynotes.navigation
+package com.kin.easynotes.presentation.navigation
+
 import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
